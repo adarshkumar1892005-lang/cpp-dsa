@@ -7,7 +7,7 @@ I am a 1st year BTech IT student learning C++ after C and Python, and using this
 
 - `01_basics_cpp/`
   - Basic C++ programs using `cin` / `cout`
-  - Simple problems: printing hello world, even/odd, calculator, greetings, etc.
+  - Simple problems: basics c++ tools,loops, conditional etc.
 - More folders will be added for:
   - Arrays and strings
   - Functions and recursion
