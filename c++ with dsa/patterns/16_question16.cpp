@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+//    1
+//   121
+//  12321
+// 1234321
+// if n =4
+
 int main() {
     int n;
     cin >> n;
