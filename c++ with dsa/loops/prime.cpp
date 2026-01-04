@@ -12,7 +12,7 @@ int main()
         {
             cout << "this is not a prime number as it is divisible by " << i << endl;
             p = 1;
-            break;
+            break; // terminate futher iteration completely 
         }
         
         i++;
