@@ -13,7 +13,7 @@ int main()
     {
         int digit = n % 10;
         if (digit == 1)
-        {
+                                  {
             ans = ans + pow(2, i) * digit;
         }
         n = n / 10;
