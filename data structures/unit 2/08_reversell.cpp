@@ -56,8 +56,10 @@ int main()
 {
     getlist(10);
     getlist(20);
-    getlist(30);
-    getlist(40);
+    getlist(10);
+    getlist(20);
+    getlist(10);
+    getlist(20);
     display();
     reverselist();
     display();
