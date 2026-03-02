@@ -42,7 +42,7 @@ void display()
 
 node* deleteat(node* head, int pos)
 {
-    int cnt;
+    int cnt = 0;
     for (node* cur  = head; cur  != 0; cur = cur -> next )
     {
         cnt ++;
