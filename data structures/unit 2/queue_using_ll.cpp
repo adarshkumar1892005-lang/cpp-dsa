@@ -37,6 +37,11 @@ void dequeue()
         node *temp = front;
         cout << "deleted element is " << front->data << endl;
         front = front->next;
+        if (front == 0)
+        {
+            rear =0;
+        }
+        
         delete temp;
     }
 }
@@ -54,14 +59,18 @@ void seek()
 }
 
 void display()
-{
-    node* temp = front;
+{   if (front ==0 && rear == 0)
+    {
+        cout << "underflow condition\n";
+    }
+    else
+    {node* temp = front;
     cout << "the queue is :- \n";
     for (node *temp = front; temp != 0; temp = temp -> next)
     {
         cout << temp -> data << " " ;
     }
-    cout << endl;
+    cout << endl;}
 }
 
 int main()
@@ -72,6 +81,10 @@ int main()
     display();
     dequeue();
     seek();
+    dequeue();
+    dequeue();
+    display();
+
 
     return 0;
 }

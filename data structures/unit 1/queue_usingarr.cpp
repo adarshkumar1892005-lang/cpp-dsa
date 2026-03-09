@@ -73,13 +73,11 @@ void display()
 
 int main()
 {
-    enqueue(5);
-    enqueue(8);
-    enqueue(2);
-    display();
     dequeue();
+    enqueue(3);
+    enqueue(2);
+    enqueue(1);
     peek();
-    display();
 
     return 0;
 }
