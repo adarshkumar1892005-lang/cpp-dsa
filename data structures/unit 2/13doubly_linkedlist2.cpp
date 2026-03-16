@@ -78,6 +78,23 @@ void delete_at_any_pos(int pos)
         return;
     }
 }
+
+void reverse_DLL()
+{
+    if (head == nullptr || head->next == nullptr)  return ;
+    node *curr = head;
+    while (curr != nullptr)
+    {
+        node *temp = curr->prev;
+        curr->prev = curr->next;
+        curr->next = temp;
+
+        curr = curr->prev;
+    }
+    curr = head;
+    head = tail;
+    tail = curr;
+}
 void display()
 {
     if (head == nullptr)
@@ -101,9 +118,11 @@ int main()
     createDLL(3);
     createDLL(4);
     createDLL(5);
-    delete_at_any_pos(1);
+    delete_at_any_pos(2);
     delete_at_any_pos(4);
-    
+
+    display();
+    reverse_DLL();
     display();
 
     return 0;
