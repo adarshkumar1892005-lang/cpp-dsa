@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int fibonacci(int n)
+int factorial(int n)
 {
     if(n==0) return 1;
-    int smaller_problem = fibonacci(n-1);
+    int smaller_problem = factorial(n-1);
     int bigger_problem = n * smaller_problem;
     return bigger_problem;
 }
@@ -12,7 +12,7 @@ int fibonacci(int n)
 int main() {
     int n;
     cin >> n;
-    int ans = fibonacci(n);
+    int ans = factorial(n);
     cout << ans;
     return 0;
 }
