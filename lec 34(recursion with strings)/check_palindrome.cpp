@@ -8,12 +8,12 @@ bool CheckPalindrome(string& name , int i , int j)
     //first case
     if(name[i] != name[j]) return false;
     //recursive call
-    CheckPalindrome(name,++i,--j);
-    return true;
+    return CheckPalindrome(name,++i,--j);
+;
 }
 
 int main() {
-    string name = "abccba";
+    string name = "abdcba";
     if(CheckPalindrome(name,0,name.length()-1))
         cout << "yes it is a palindrome \n";
     else cout << "no it is not a palindrome \n";

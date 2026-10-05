@@ -3,7 +3,6 @@ using namespace std;
 
 void reverse(string& str, int j)
 {
-    cout << "string received here -" << str << endl;
     int i = str.length()-j-1;
     //base case
     if(i>j) return;

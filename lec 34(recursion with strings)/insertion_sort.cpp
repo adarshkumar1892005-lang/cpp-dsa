@@ -11,8 +11,6 @@ void printarray(int arr[], int n)
 
 void insertion_sort(int arr[], int n,int i)
 {
-    cout << "array received \n";
-    printarray(arr,n);
     //base case
     if(i>=n) return;
 

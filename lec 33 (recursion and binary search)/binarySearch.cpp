@@ -12,13 +12,11 @@ void print(int arr[], int s , int e)
 
 bool BinarySearch(int arr[], int s , int e , int k)
 {
-    print(arr, s,e);
     // base codition
     if(s>e) return false;
 
     // first case
     int mid = s + (e-s)/2;
-    cout << "mid is " << arr[mid] << " and key is " << k <<endl <<  endl;
     if(arr[mid] == k) return true;
 
     // recursive relation
