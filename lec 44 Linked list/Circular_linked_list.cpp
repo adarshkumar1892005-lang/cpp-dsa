@@ -90,7 +90,7 @@ void InsertNode(Node* &tail, int d, int i)
 void deleteAtIndex(Node* &tail, int i)
 {
     int n = getLen(tail);
-    if(i < 1 || i+1 > n)
+    if(i < 1 || i > n)
     {
         cout << "invalid indexing\n";
         return;
