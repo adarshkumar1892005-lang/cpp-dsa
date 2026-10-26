@@ -42,7 +42,7 @@ void removeDuplicate(Node* &head)
         }
         else curr = curr->next;
     }
-    cout << "Duplicates removed" << endl;
+    cout << "Duplicates removed !" << endl;
 }
 
 void printNode(Node* head)
